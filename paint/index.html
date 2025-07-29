@@ -220,6 +220,133 @@ Atlanta, GA.  </small> <small><span class="text-light"> (678)327-8225</span><br>
 			</div>
         </footer>
         <!-- Footer End -->
+<!-- floating button -->
+        <div class="floatingbtn-container text-center position-fixed bottom-0 end-0 w-md-25 z-5">
+            <div class="">
+                <a href="tel:678-327-8225" class="btn btn-primary btn-sm rounded-circle border-0 d-inline-flex align-items-center justify-content-center d-md-none shadow" style="width: 50px;height: 50px;"><i class="bi bi-telephone text-white h4 m-0"></i></a>
+				<button class="btn btn-primary btn-contactSM_btn btn-lg rounded-top rounded-0 border-0 px-5 px-md-4" data-bs-toggle="modal" data-bs-target="#contactSmallModal">Contact us</button>
+            </div>
+			<!-- small modal popup -->
+			<div class="modal slide" id="contactSmallModal" data-bs-backdrop="false">
+				<div class="modal-dialog position-fixed bottom-0 end-0 m-0 m-sm-3 mb-sm-0 bg-dark text-white shadow">
+					<div class="modal-content rounded-0 border-0">
+						<!-- div class="modal-header">
+							<h4 class="modal-title">Modal Heading</h4>						
+						</div -->
+
+						<!-- Modal body -->
+						<div class="modal-body bg-dark">
+							<!-- Floating Chat Box -->
+							<div class="chat-modal rounded">
+							  <div class="d-flex justify-content-between align-items-cente px-3">
+								<img src="../assets/img/LOGO.png" alt="Logo" class="chat-logo h-auto" width="150">
+								<button type="button" class="btn-close btn-close-white small p me-n3" data-bs-dismiss="modal" aria-label="Close"></button>
+							  </div>
+							  <div class="px-3">
+								<h5 class="mt-2 text-white text-center">Let's Talk!</h5>
+								<p class="mb-3">Thanks for stopping by! We're here to <br>help, please don't hesitate to reach out.</p>
+								<button class="btn-contactFormModal btn btn-danger btn-md w-100 mb-2 d-flex justify-content-between align-items-center py-3" data-bs-target="#contact_formModal" data-bs-toggle="modal">
+								  <span>Get in touch</span> <i class="fa fa-chevron-right"></i>
+								</button>
+							  </div>
+							</div>
+						</div>
+
+						<!-- Modal footer -->
+						<div class="modal-footer bg-grey justify-content-start rounded-0 border-0 pb-4">
+							<a href="tel:678-327-8225" class="btn btn-white btn-sm rounded-circle bg-white"><i class="bi bi-telephone"></i></a>
+							<a href="mailto:" class="btn btn-white btn-sm rounded-circle mx-4 bg-white"><i class="bi bi-envelope"></i></a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- small modal popup ends -->
+		</div>
+        <!-- floating button ends -->
+		<!-- contact form modal popup -->
+		<div class="modal slide z-5" id="contact_formModal" data-bs-backdrop="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg text-white shadow my-0 vh-100">
+				<div class="modal-content rounded-0 border-0 d-flex flex-column">
+					<div class="modal-header shadow z-5">
+						<h4 class="modal-title text-danger">Whitaker Restorations</h4>
+						<button type="button" class="btn-close btn-close-dark small p me-n" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body bg-white flex-grow-1 p-0">
+						<div class="contact-modal rounded d-flex flex-column align-items-center">
+							<form class="row flex-column align-items-center col-10" method="post" action="https://api.web3forms.com/submit">
+								<div class="col-11 vh-75 p-3 p-xl-4">
+									<input type="hidden" name="access_key" value="d07c8dcc-4f13-4bb4-8b27-4047c8660f51">
+									<input type="hidden" name="redirect" value="https://inspirontechnologies.com/how-to-contact?result=1">
+									<div class="mb-3"><label class="form-label fw-bold text-danger" for="firstname">First Name*</label><input class="form-control form-control form-control form-control form-control form-control" type="text" id="firstname" name="firstname" required=""></div>
+									<div class="mb-3"><label class="form-label fw-bold text-danger" for="lastname">Last Name*</label><input class="form-control form-control form-control form-control form-control form-control" type="text" id="lastname" name="lastname" required=""></div>
+									<div class="mb-3"><label class="form-label fw-bold text-danger" for="phone">Phone*</label><input class="form-control form-control form-control form-control form-control" type="tel" id="phone" name="phone" pattern="()^\+?[0-9\s\-]{7,15}$" required=""></div>
+									<div class="mb-3"><label class="form-label fw-bold text-danger" for="email">Email*</label><input class="form-control form-control form-control form-control form-control form-control" type="email" id="email" name="email" required=""></div>
+									<div class="mb-3"><label class="form-label fw-bold text-danger" for="message">Message/Address for Property Inspection*</label><textarea class="form-control form-control form-control form-control form-control form-control" id="message" name="message" rows="6"></textarea></div>
+								</div>
+								<div class="mb-2 bg-white position-sticky fixed-bottom p-3 p-xl-3 w-100"><button class="btn btn-primary w-100 rounded- btn-lg" type="submit" required="">SUBMIT </button></div>
+							</form>
+						</div>
+					</div>
+
+					<!-- Modal footer -->
+					<!-- div class="modal-footer bg-light justify-content-start">
+						<button class="btn btn-primary rounded-5" type="submit" required="">SUBMIT </button>
+					</div -->
+
+				</div>
+			</div>
+		</div>
+		<!-- contact form modal popup ends -->
+		
+        <div class="offcanvas offcanvas-end bg-dark z-5" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
+			<div class="offcanvas-header ms-3">
+			  <button type="button" class="btn-close ms-n4 ms-sm-n5 bg-primary" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<li class="nav-item">
+					  <a class="nav-link text-grey" aria-current="page" href="/">Home</a>
+					</li>
+				 
+					<li class="nav-item dropdown">
+					  <a class="nav-link text-grey dropdown-toggle" href="/roofing" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+						Services
+					  </a>
+					  <ul class="dropdown-menu bg-transparent show ms-3">
+						<li class=""><a class="dropdown-item text-grey ps-0" href="/roofing">Roofing</a></li>
+						<li class=""><a class="dropdown-item text-grey ps-0" href="/gutters">Gutters</a></li>
+						<li class=""><a class="dropdown-item text-grey ps-0" href="/repairs">Repairs</a></li>
+						<li class=""><a class="dropdown-item text-grey ps-0" href="/insuranceclaim">Insurance Claim Assistance</a></li>
+						<li class=""><a class="dropdown-item text-grey ps-0" href="/siding">Siding</a></li>
+						<li class=""><a class="dropdown-item text-grey ps-0" href="/paint">Paint</a></li>
+						<li class=""><a class="dropdown-item text-grey ps-0" href="/deks">Deks</a></li>		
+						<li class=""><a class="dropdown-item text-grey ps-0" href="/watermitigation">Water Mitigation</a></li>		   
+					  </ul>
+					</li>
+					   <li class="nav-item">
+					  <a class="nav-link text-grey" href="/gallery">Gallery</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link text-grey" href="/products">Products</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link text-grey" href="/testimonials">Testimonials</a>
+					</li> 
+					<li class="nav-item">
+					  <a class="nav-link text-grey" href="/servicearea">Service Area</a>
+					</li> 
+					<li class="nav-item">
+					  <a class="nav-link text-grey" href="/referrals">Referrals</a>
+					</li>            
+					<li class="nav-item">
+					  <a class="nav-link text-grey" href="/contactus">Contact</a>
+					</li>
+				</ul>
+			</div>
+        </div>
+        
 
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
