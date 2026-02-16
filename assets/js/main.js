@@ -12,8 +12,14 @@
     spinner();
     
 	setTimeout(function() {
-		$('.btn-contactSM_btn', document).trigger('click');
-    }, 10000); // 10000 milliseconds = 10 seconds
+		if( $('#contact_formModal', document).hasClass('show') || $('#contactSmallModal', document).hasClass('show') ){
+			//console.log('already open');
+		} else {
+			//const myModal = bootstrap.Modal.getInstance($('#contactSmallModal')[0]);
+			//myModal.show();
+			$('.btn-contactSM_btn', document).trigger('click');
+		}
+    }, 5000*60*60); // 10000 milliseconds = 5 seconds * 60*60
     
     // Initiate the wowjs
     new WOW().init();
@@ -63,10 +69,21 @@
 	}).on('click', '#contact_form .btn-close, #contactSmallModal .btn-close', function(e){
 		$('.btn-contactSM_btn').show();
 	}).on('hidden.bs.modal', function (e) {
-		console.log(e);
+		//console.log(e);
 		if(e.target.id == 'contact_formModal'){
 			$('.btn-contactSM_btn').show();
 		}
     });
 
 })(jQuery);
+
+
+    // Get the query parameters from the URL
+    const params = new URLSearchParams(window.location.search);
+    const message = params.get('message'); // Get 'message' parameter
+
+    // Display it if it exists
+    if (message) {
+	const message ="We received your Message, Thank you.";    
+      document.getElementById('message').textContent = decodeURIComponent(message);
+    }

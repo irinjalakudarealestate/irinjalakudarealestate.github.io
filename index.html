@@ -17,18 +17,18 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
-        <link href="../assets/lib/animate/animate.min.css" rel="stylesheet">
-        <link href="../assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
         <!-- Customized Bootstrap Stylesheet -->
-        <link href="../assets/css/bootstrap.min.css" rel="stylesheet" -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" -->
 		<!-- link href="assets/css/bootstrap-5.3.3.min.css" rel="stylesheet" -->
 
         <!-- Template Stylesheet -->
-        <link href="../assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
     </head>
 
-     <body class="bg-light">
+    <body class="bg-light">
 		
         <!-- Spinner Start -->
         <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -66,7 +66,7 @@
    
 				</div>
 				<div class="col-5">
-					<a class="ve_no_url" href="/" title="Impact Construction" rel="home"><img src="../assets/img/impact.png" class="img-fluid animate-pulse"></a>
+					<a class="ve_no_url" href="/" title="Impact Construction" rel="home"><img src="assets/img/impact.png" class="img-fluid animate-pulse"></a>
 				</div>
 				<div class="col-4 text-end">
 					<small class="me-3 text-secondary"><a href="tel:+1-678-327-8225" class="text-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
@@ -80,10 +80,9 @@
 		</div>
 
     <!-- Logo End -->
-
         <!-- </div> -->
         
-       <!-- Navbar Start -->
+        <!-- Navbar Start -->
         <header class="container-fluid bg-success d-none d-lg-block" id="navbar">
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
@@ -92,16 +91,16 @@
 					</button>
                     <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                            <a href="/" class="nav-item nav-link p-2 pb-0 mb-2 small">HOME</a>
+                            <a href="/" class="nav-item nav-link p-2 pb-0 mb-2 active text-secondary small">HOME</a>
 							<div class="nav-item dropdown bg-success">
-								<a href="/services" class="nav-link p-2 pb-0 mb-2 dropdown-toggle small active" data-bs-toggle="dropdown">SERVICES</a>
+								<a href="/services" class="nav-link p-2 pb-0 mb-2 dropdown-toggle small" data-bs-toggle="dropdown">SERVICES</a>
                                 <div style ="background-color:#0f5132;" class="dropdown-menu rounded  d-flex flex-column px-3">
                                     <a href="/roofing" class="dropdown-item ps-0">ROOFING</a>
                                     <a href="/gutters" class="dropdown-item ps-0">GUTTERS</a>
 									<a href="/paint" class="dropdown-item ps-0">PAINT</a>
                                     <a href="/repairs" class="dropdown-item ps-0">REPAIRS</a>
                                     <a href="/insuranceclaim" class="dropdown-item ps-0">INSURANCE CLAIM ASSISTANCE</a>
-                                    <a href="/siding" class="dropdown-item ps-0">SIDING</a>
+                                    <a href="/siding" class="dropdown-item ps-0">SIDING</a>                              
                                     <a href="/decks" class="dropdown-item ps-0">DECKS</a>
 									<a href="/watermitigation" class="dropdown-item ps-0">WATER MITIGATION</a>
 									<a href="/treeservices" class="dropdown-item ps-0">TREE SERVICES</a>
@@ -121,79 +120,161 @@
         </header>
         <!-- Navbar End -->
 
+        <!-- Banner Start -->
+        <section class="container-fluid px-0">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active p-4 p-md-5">
+                        <!--img src="assets/img/home/_DL.jpg" class="img-fluid position-absolute start-0 top-0 h-100" alt="First slide" -->
+						<!-- Overlay -->
+						<div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 z-1"></div>
+                        <div class="carousel-caption py-5 position-static d-flex align-items-center justify-content-center">
+                            <div class="container carousel-content py-5">
+                                <h1 class="text-white display-5 mb-4 animated fadeInRight">HIRE A TRUSTED AND PROFESSIONAL CONSTRUCTION COMPANY</h1>
+                                <p class="mb-4 text-white fs-5 animated fadeInDown">Connect with Impact Construction for Professional Services</p>
+                                 <a href="/contactus" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-success rounded-pill carousel-content-btn2 animated fadeInRight border-0 btn-hover-dark">Contact Us today for FREE Property Inspection</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner End -->
+
+		<!-- Services Start -->
+		<section class="container-fluid services py-5">
+			<div class="container">
+				<div class="row g-5 mt-3 mb-5 justify-content-center">
+					<!-- Card Item -->
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					  <a href="/roofing">
+						  <div class="services-item border border-5 border-success position-relative text-white rounded-5 overflow-hidden shadow p-3 d-flex align-items-center hover-overlay" style="background-image: url('assets/img/home/F1.jpg'); min-height: 250px;">
+							<div class="text-center px-2">
+							  <h4 class=" mb-3 text-white">Roofing</h4>
+							  <p class="mb-0">We'll repair or replace your outdated or damaged roof.</p>
+							</div>
+						  </div>
+					  </a>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					  <a href="/gutters">
+						  <div class="services-item border border-5 border-success position-relative text-white rounded-5 overflow-hidden shadow p-3 d-flex align-items-center hover-overlay" style="background-image: url('assets/img/home/F2.jpg'); min-height: 250px;">
+							<div class="text-center px-2">
+							  <h4 class=" mb-3 text-white">Gutters</h4>
+							  <p class="mb-0">Trust us to replace your leaking gutters and downspout.</p>
+							</div>
+						  </div>
+					  </a>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<a href="/repairs">
+						  <div class="services-item border border-5 border-success position-relative text-white rounded-5 overflow-hidden shadow p-3 d-flex align-items-center hover-overlay" style="background-image: url('assets/img/home/F3.jpg'); min-height: 250px;">
+							<div class="text-center px-2">
+							  <h4 class=" mb-3 text-white">Repairs</h4>
+							  <p class="mb-0">We can keep your roof and gutters working flawlessly.</p>
+							</div>
+						  </div>
+						</a>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					  <a href="/insuranceclaim">
+						<div class="services-item border border-5 border-success position-relative text-white rounded-5 overflow-hidden shadow p-3 d-flex align-items-center hover-overlay" style="background-image: url('assets/img/home/F4.jpg'); min-height: 250px;">
+						<div class="text-center px-2">
+						  <h4 class=" mb-3 text-white">Insurance Claim Assistance</h4>
+						  <p class="mb-0">Our crew specializes in storm damage insurance claim services.</p>
+						</div>
+					  </div>
+					  </a>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					  <a href="/siding">
+						  <div class="services-item border border-5 border-success position-relative text-white rounded-5 overflow-hidden shadow p-3 d-flex align-items-center hover-overlay" style="background-image: url('assets/img/home/siding.jpg'); min-height: 250px;">
+							<div class="text-center px-2">
+							  <h4 class=" mb-3 text-white">Siding</h4>
+							  <p class="mb-0">For quality siding repair, replacement, and installation services, choose Whitaker Restoration.</p>
+							</div>
+						  </div>
+						</a>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<a href="/paint">
+						  <div class="services-item border border-5 border-success position-relative text-white rounded-5 overflow-hidden shadow p-3 d-flex align-items-center hover-overlay" style="background-image: url('assets/img/home/paint.jpg'); min-height: 250px;">
+							<div class="text-center px-2">
+							  <h4 class=" mb-3 text-white">Paint</h4>
+							  <p class="mb-0">Roofing services alongside painting expertise, providing a one-stop solution for exterior home upgrades.</p>
+							</div>
+						  </div>
+						</a>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<a href="/decks">
+							<div class="services-item border border-5 border-success position-relative text-white rounded-5 overflow-hidden shadow p-3 d-flex align-items-center hover-overlay" style="background-image: url('assets/img/home/decks.jpg'); min-height: 250px;">
+								<div class="text-center px-2">
+								  <h4 class=" mb-3 text-white">Decks</h4>
+								  <p class="mb-0">At Impact Construction we can design your dream deck exactly the way you want it.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+						<a href="/watermitigation">
+							<div class="services-item border border-5 border-success position-relative text-white rounded-5 overflow-hidden shadow p-3 d-flex align-items-center hover-overlay" style="background-image: url('assets/img/home/watermitigation.jpg'); min-height: 250px;">
+								<div class="text-center px-2">
+								  <h4 class=" mb-3 text-white">Water Mitigation</h4>
+								  <p class="mb-0">Experienced water mitigation specialists.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</section>        
 
 <!--Review Start -->
 
-                <section class="container-fluid review mb-5">
-            <div class="container">
-                <div class="row">
-                        
-                       
-                        <h1 class="mb-1 mt-4 text-white">Commercial and Residential Roofing</h1>
-                        <h2  class="mb-1 mt-2 text-white">Schedule roofing services you can depend on</h2>
-                        
-                         <p  class="mb-1 text-white">As skilled roofers, we specialize in complete roof replacements for both residential and commercial properties, ensuring long-lasting protection and peace of mind. Call on Impact Construction for reliable roof installation services. Our experts can help you decide on the right type of roof for your home and install it with care. We have experience installing engineered rolled and asphalt shingle roofs.  <br><br></p>
-                           
-                       <p  class="mb-4 text-white"></p>
-                    
+		<section class="container-fluid review mb-5 border-5 border-top border-bottom border-yellow py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+					<h1 class="mb-1 mt-4 text-white text-center">Trust Your Local Construction Experts</h1>
+					<h6 class="mb-1 mt-2 text-white text-center"></h6>
+					<p class="mb-0 text-white text-center"> At Impact Construction, we specialize in delivering high-quality construction solutions tailored to meet the needs of residential, commercial, and industrial clients. From planning and design to execution, we are committed to strong workmanship, reliable timelines, and transparent communication at every stage of the project.
 
-                
+With a skilled team, quality materials, and modern construction practices, we focus on building and designing structures that are durable, functional, and built to last. Customer satisfaction, safety standards, and attention to detail are at the core of everything we do.
+
+To thank our clients and well-wishers, we offer a referral program that rewards you for recommending our services.<br><br></p>
+					<div class="d-flex flex-column justify-content-center align-items-center">
+						<span class="Gbtn p-3 px-3 bg-white d-flex justify-content-center align-items-center shadow-lg">
+							<a href="https://www.google.com/search?q=whitakerrestorations&amp;rlz=1C1ONGR_enUS1092US1092&amp;oq=Impact Construction&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAAGIAEMggIAhAAGBYYHjIGCAMQRRg9MgYIBBBFGD0yBggFEEUYPNIBBzMyMGowajeoAgCwAgA&amp;sourceid=chrome&amp;ie=UTF-8" target="_blank" class="Glink d-flex justify-content-center align-items-center">
+								<h6 class="p-0 m-0"><span class="d-flex align-items-center"><svg class="svg-inline--fa fa-google fa-w-16" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" width="50" height="25" data-fa-i2svg=""><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path></svg><!-- <i class="fab fa-google"></i> --> REVIEW US ON GOOGLE</span></h6>
+							</a>
+						</span>
+					</div>
                 </div>
             </div>
         </section>
 
-</section>
-<section>
+	<!--Review End -->
 
-
-<div class="container ">
-  <div class="row">
-    <div class="col">
-   <p class=" text-success" style="font-size: 35px;" ><b>Hail and Wind damages</b></p>
- <p>Strong winds can significantly compromise the integrity of your roof. Wind and Hail related damages are among the most common roofing problems we see, and it often occurs alongside issues such as fallen tree limbs or water intrusion, which can worsen the overall impact.
-
-One of the challenges with wind damage is that it may not be immediately visible. Many homeowners remain unaware of an issue until more extensive damage develops. At Impact Construction, our skilled roofing professionals advise scheduling a comprehensive roof inspection after any episode of high winds or hail damage to help protect your home and business to maintain your roof in peak condition.
-</p>
-
-<p>Contact us for your roof replacement and repair services.
-</p>
-<div class="col text-center">
-<a href="/contactus" ><button type="button" class="btn btn-success">CONTACT US</button> </a>
-</div>
-<br>
-
-    </div>
-	<div class="col">
- 		<img src="../assets/img/home/F1.jpg" width="500" height="400">
-    </div>
-
-  </div>
-
-<br>
-  <div class="row">
-    <div class="col"> 
-		<br>
-    </div>
-	<div class="col">
- 		<img src="../assets/img/home/roofing_2.jpeg" width="500" height="400">
-    </div>
-
-  </div>
-<br>
-  <div class="row">
-    <div class="col"> 
-		<br>
-    </div>
-	<div class="col">
- 		<img src="../assets/img/home/roofing_3.jpeg" width="500" height="400">
-    </div>
-
-  </div>
-
-
-</div>
-<br>
-</section>
+    
+      
+        <section class="py-5 my-1">
+			<div class="container">
+                <div class="row align-items-center mt-2 mb-5 g-5">
+					<h1 class="mb-0 text-success text-center">Nick Whitaker <br> (Owner/Operator/Manager)</h1>
+					<div class="text-center mt-5 mb-5">
+						<img src="assets/img/home/family.jpg" alt="Centered Image" class="img-fluid col-md-6 rounded custom-family-img">
+					</div>
+				</div>
+            </div>
+        </section>
 
         <!-- Footer Start -->
          <footer class="container-fluid footer bg-dark py-2 pb-5 pb-md-2">
@@ -213,14 +294,14 @@ Atlanta, GA.  </small> <small><span class="text-white"> <a href="tel:+1-678-327-
         </footer>
         <!-- Footer End -->
 		
-
-	<!-- floating button -->
+		<!-- floating button -->
         <div class="floatingbtn-container text-center position-fixed bottom-0 end-0 w-md-25 z-5">
             <div class="">
                 <a href="tel:678-327-8225" class="btn btn-success btn-sm rounded-circle border-0 d-inline-flex align-items-center justify-content-center d-md-none shadow" style="width: 50px;height: 50px;"><i class="bi bi-telephone text-white h4 m-0"></i></a>
 				<button class="btn btn-success btn-contactSM_btn btn-lg rounded-top rounded-0 border-0 px-5 px-md-4" data-bs-toggle="modal" data-bs-target="#contactSmallModal">Contact us</button>
             </div>
-			<!-- small modal popup -->
+			</div>
+        <!-- small modal popup -->
 			<div class="modal slide" id="contactSmallModal" data-bs-backdrop="false">
 				<div class="modal-dialog position-fixed bottom-0 end-0 m-0 m-sm-3 mb-sm-0 bg-light text-white shadow">
 					<div class="modal-content rounded-0 border-0">
@@ -233,7 +314,7 @@ Atlanta, GA.  </small> <small><span class="text-white"> <a href="tel:+1-678-327-
 							<!-- Floating Chat Box -->
 							<div class="chat-modal rounded">
 							  <div class="d-flex justify-content-between align-items-cente px-3">
-								<img src="../assets/img/impact.png" alt="Logo" class="chat-logo h-auto" width="150">
+							<img src="assets/img/impact.png" alt="Logo" class="chat-logo h-auto" width="150">
 								<button type="button" class="btn-close btn-close-success small p me-n3" data-bs-dismiss="modal" aria-label="Close"></button>
 							  </div>
 							  <div class="px-3">
@@ -256,15 +337,14 @@ Atlanta, GA.  </small> <small><span class="text-white"> <a href="tel:+1-678-327-
 				</div>
 			</div>
 			<!-- small modal popup ends -->
-		</div>
-        <!-- floating button ends -->
+			<!-- floating button ends -->
 		<!-- contact form modal popup -->
 		<div class="modal slide z-5" id="contact_formModal" data-bs-backdrop="true">
 			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg text-white shadow my-0 vh-100">
 				<div class="modal-content rounded-0 border-0 d-flex flex-column">
 					<div class="modal-header shadow z-5">
 						<div class="d-flex justify-content-between align-items-center px-3 gap-3">
-							<img src="../assets/img/impact.png" alt="Logo" class="chat-logo h-auto" width="150">
+							<img src="assets/img/impact.png"  alt="Logo" class="chat-logo h-auto" width="150">
 							<h4 class="modal-title text-success">Impact Construction</h4>
 						</div>
 						<button type="button" class="btn-close btn-close-dark small p me-n" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -275,7 +355,7 @@ Atlanta, GA.  </small> <small><span class="text-white"> <a href="tel:+1-678-327-
 							<form class="row flex-column align-items-center col-10" method="post" action="https://api.web3forms.com/submit">
 								<div class="col-11 vh-75 p-3 p-xl-4">
 									<input type="hidden" name="access_key" value="d07c8dcc-4f13-4bb4-8b27-4047c8660f51">
-									<input type="hidden" name="redirect" value="https://whitakerrestorations.github.io/decks?message=1">
+									<input type="hidden" name="redirect" value="https://whitakerrestorations.github.io/index.html?message=1">
 									<div class="form-floating pb-3 mt-3">
 										<input class="form-control text-dark" type="text" id="subject" name="subject" required value="Contact request" placeholder>
 										<label class="form-label fw-bold text-success py-0 bg-white ms-2 opacity-1 mt-n1 h-auto" for="subject">Subject</label>
@@ -286,7 +366,7 @@ Atlanta, GA.  </small> <small><span class="text-white"> <a href="tel:+1-678-327-
 									</div>
 									<div class="form-heading mt-4 text-success fw-bold">Client Info</div>
 									<div class="form-floating pb-3 mt-4">
-										<input class="form-control text-success" type="email" id="email" name="email" required placeholder="Email">
+										<input class="form-control text-dark" type="email" id="email" name="email" required placeholder="Email">
 										<label class="form-label fw-bold text-success py-0 bg-white ms-2 opacity-1 mt-n1 h-auto" for="email">Email</label>
 									</div>
 									<div class="d-lg-flex pb-3 mt-4 gap-3">
@@ -323,14 +403,11 @@ Atlanta, GA.  </small> <small><span class="text-white"> <a href="tel:+1-678-327-
 		</div>
 		<!-- contact form modal popup ends -->
 		
-    <!-- contact form modal popup ends -->
-		
-		
         <div class="offcanvas offcanvas-end bg-dark z-5" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
 			<div class="offcanvas-header ms-3">
 			  <button type="button" class="btn-close ms-n4 ms-sm-n5 bg-success" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 			</div>
-<div class="offcanvas-body">
+			<div class="offcanvas-body">
 				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 					<li class="nav-item">
 					  <a class="nav-link text-grey" aria-current="page" href="/">Home</a>
@@ -349,7 +426,7 @@ Atlanta, GA.  </small> <small><span class="text-white"> <a href="tel:+1-678-327-
 						<li class=""><a class="dropdown-item text-grey ps-0" href="/siding">Siding</a></li>
 						<li class=""><a class="dropdown-item text-grey ps-0" href="/decks">Decks</a></li>		
 						<li class=""><a class="dropdown-item text-grey ps-0" href="/watermitigation">Water Mitigation</a></li>	
-						<li class=""><a class="dropdown-item text-grey ps-0" href="/treeservices">Tree Services</a></li>	   
+						<li class=""><a class="dropdown-item text-grey ps-0" href="/treeservices">Tree Services</a></li>		  
 					  </ul>
 					</li>
 					   <li class="nav-item">
@@ -371,7 +448,7 @@ Atlanta, GA.  </small> <small><span class="text-white"> <a href="tel:+1-678-327-
 					  <a class="nav-link text-grey" href="/contactus">Contact</a>
 					</li>
 					<li class="nav-item">
-					  <a class="nav-link text-grey" href="/financiing">Financing</a>
+					  <a class="nav-link text-grey" href="/financiing">Financiing</a>
 					</li>
 				</ul>
 			</div>
@@ -380,15 +457,27 @@ Atlanta, GA.  </small> <small><span class="text-white"> <a href="tel:+1-678-327-
         <!-- JavaScript Libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="../assets/lib/wow/wow.min.js"></script>
-        <script src="../assets/lib/easing/easing.min.js"></script>
-        <script src="../assets/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="assets/lib/wow/wow.min.js"></script>
+        <script src="assets/lib/easing/easing.min.js"></script>
+        <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
 
         <!-- Template Javascript -->
-        <script src="../assets/js/main.js"></script>
+        <script src="assets/js/main.js"></script>
 	</body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
